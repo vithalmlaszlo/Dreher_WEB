@@ -23,7 +23,7 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-   overflow-x: visible; 
+   overflow-x: hidden; 
 
     /* @media only screen and (max-width: 576px) {
          overflow-x: hidden; 
@@ -31,12 +31,29 @@ html,body
 }  
 
 body {
-    font-family: 'Advent Pro', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 300;
     font-size: 2rem;
     background-color: rgba(216, 216, 216, 0.253);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 /* ==============================================================
                         ANIMATION 
 =================================================================*/
+
+
+
+/* ========================================================
+                      HLEPER
+  ========================================================*/
+
+  
+  h1 {
+    color: black;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 800;
+    display: inline-block;
+  
+  }

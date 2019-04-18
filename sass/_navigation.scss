@@ -1,3 +1,443 @@
-/* ==========================================================================
-   MENU CONFIGURATION
-   ========================================================================== */
+/* ========================================================
+                      HAMBURGER Menu
+  ========================================================*/
+.navbar__container--trigger {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  padding: 0 0.8em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+.navbar__container--trigger span {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.8);
+  vertical-align: middle;
+  transform: translateY(-2px);
+}
+
+.navbar__container--trigger span::before,
+.navbar__container--trigger span::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  transition: all 0.2s;
+}
+
+.navbar__container--trigger span::before {
+  top: -6px;
+}
+
+.navbar__container--trigger span::after {
+  bottom: -6px;
+}
+
+.navbar__container--trigger:hover span::before {
+  top: -8px;
+}
+
+.navbar__container--trigger:hover span::after {
+  bottom: -8px;
+}
+
+/* ========================================================
+                        NAV menu
+    ========================================================*/
+#main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(178, 67, 89, 0.295);
+  transform: translateY(-150%);
+  transition-property: transform;
+  transition-duration: 0.5s;
+  z-index: 3;
+}
+
+/* Show menu */
+#main-nav.is-visible {
+  transform: translateY(0);
+}
+
+/* Close menu + animation */
+#main-nav .cd-close-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+#main-nav .cd-close-menu::before,
+#main-nav .cd-close-menu::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  transition-property: transform;
+  transition-duration: 0.3s;
+}
+
+#main-nav .cd-close-menu::before {
+  transform: rotate(45deg);
+}
+
+#main-nav .cd-close-menu::after {
+  transform: rotate(135deg);
+}
+
+#main-nav .cd-close-menu:hover::before {
+  transform: rotate(225deg);
+}
+
+#main-nav .cd-close-menu:hover::after {
+  transform: rotate(315deg);
+}
+
+/* ========================================================
+                        DESIGN NAV CONTENT
+    ========================================================*/
+.navbar__content {
+  height: 100%;
+}
+
+.navbar__content--ul {
+  padding: 0;
+}
+
+.navbar__content--li {
+  list-style: none;
+  text-align: center;
+  line-height: 0.8;
+}
+
+.navbar__content--a {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  display: block;
+}
+
+.navbar__content--a:hover {
+  text-decoration: none;
+  transform: translateX(1px);
+}
+
+.navbar__close {
+  position: relative;
+}
+/* Logok */
+
+.social-logo-hidden img {
+  height: 8rem;
+  width: 8rem;
+  z-index: 10;
+  transform: translateY(-2rem);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.social-logo-hidden img:hover {
+  cursor: pointer;
+  transform: translateY(-1.7rem);
+}
+
+.icon {
+  font-size: 4.35rem;
+  color: rgba(255, 255, 255, 0.8);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.icon:hover {
+  color: rgba(19, 19, 19, 0.716);
+  text-decoration: none;
+  text-shadow: 1px 1px 3px rgba(34, 34, 34, 0.805);
+  margin-top: 1px;
+  cursor: pointer;
+}
+
+.navbar__textbox {
+  border: 2px solid black;
+}
+
+.body {
+  transform: translateX(-50%);
+}
+
+/* ========================================================
+                        checkbox manipulation
+    ========================================================*/
+/* Put this code the html  a lebel eltünteti a chekboxot, majd CSS-ben bárit manipulálhatunk, ilyen a hover is.
+  <label for="navi-toggle"> </label> 
+  <input type="checkbox" class="navigation__checkbox" id="navi-toggle"> */
+
+/* ========================================================
+                        Animation Social
+    ========================================================*/
+.navigation__checkbox {
+  display: none;
+}
+
+/* Right-side */
+.ion-logo-apple {
+  opacity: 0;
+  transform: translateX(-11rem);
+}
+
+.navigation__checkbox:checked ~ .ion-logo-apple {
+  transform: translateX(0rem);
+  opacity: 1;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.8s,
+    opacity 1s 0.8s, margin-top 0.3s, text-shadow 0.3s, color 0.3s;
+}
+
+.ion-logo-facebook {
+  opacity: 0;
+  transform: translateX(-11rem);
+}
+
+.navigation__checkbox:checked ~ .ion-logo-facebook {
+  transform: translateX(0rem);
+  opacity: 1;
+  transition: transform 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s,
+    opacity 1s 0.4s, margin-top 0.3s, text-shadow 0.3s, color 0.3s;
+}
+
+.ion-logo-twitter {
+  opacity: 0;
+  transform: translateX(-11rem);
+}
+
+.navigation__checkbox:checked ~ .ion-logo-twitter {
+  transform: translateX(0rem);
+  opacity: 1;
+  transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 1s,
+    margin-top 0.3s, text-shadow 0.3s, color 0.3s;
+}
+
+/* Left side */
+.ion-logo-linkedin {
+  opacity: 0;
+  transform: translateX(11rem);
+}
+
+.navigation__checkbox:checked ~ .ion-logo-linkedin {
+  transform: translateX(0rem);
+  opacity: 1;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.8s,
+    opacity 1s 0.8s, margin-top 0.3s, text-shadow 0.3s, color 0.3s;
+}
+
+.ion-logo-ionic {
+  opacity: 0;
+  transform: translateX(11rem);
+}
+
+.navigation__checkbox:checked ~ .ion-logo-ionic {
+  transform: translateX(0rem);
+  opacity: 1;
+  transition: transform 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s,
+    opacity 1s 0.4s, margin-top 0.3s, text-shadow 0.3s, color 0.3s;
+}
+
+.ion-logo-instagram {
+  opacity: 0;
+  transform: translateX(11rem);
+}
+
+.navigation__checkbox:checked ~ .ion-logo-instagram {
+  transform: translateX(0rem);
+  opacity: 1;
+  transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 1s,
+    margin-top 0.3s, text-shadow 0.3s, color 0.3s;
+}
+
+/* ========================================================
+                        Animation Link
+    ========================================================*/
+.in--1 {
+  animation-name: in--1;
+  animation-duration: 2.4s;
+}
+
+@keyframes in--1 {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  60% {
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.in--2 {
+  animation-name: in--2;
+  animation-duration: 2s;
+  animation-delay: 0.4s;
+}
+
+@keyframes in--2 {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  60% {
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.in--3 {
+  animation-name: in--3;
+  animation-duration: 1.6s;
+  animation-delay: 0.8s;
+}
+
+@keyframes in--3 {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  60% {
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.in--4 {
+  animation-name: in--4;
+  animation-duration: 1.4s;
+  animation-delay: 1.2s;
+}
+
+@keyframes in--4 {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  60% {
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.cars__logo {
+  height: 60%;
+  mix-blend-mode: multiply;
+}
+
+.cars__logo img:hover {
+  transform: translateY(0.2rem);
+  cursor: pointer;
+}
+
+.img-fluid {
+  max-width: 50%;
+}
