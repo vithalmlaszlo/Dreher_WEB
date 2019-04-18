@@ -9,16 +9,11 @@
 }
 
 .header {
-    overflow: hidden;
-    position: relative;
+    
+   
 
     &__imagebox {
-        padding-top: 9rem;
-        position: absolute;
-        top:0;
-        text-align: center;
-        height: 100vh;
-        background-color: rgba(0, 0, 0, 0.2);
+        
 
         &--img {
             width: 80%;

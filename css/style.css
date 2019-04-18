@@ -7075,38 +7075,31 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover; }
 
-.header {
-  overflow: hidden;
-  position: relative; }
-  .header__imagebox {
-    padding-top: 9rem;
-    position: absolute;
-    top: 0;
-    text-align: center;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.2); }
-    .header__imagebox--img {
-      width: 80%;
-      opacity: 0.7; }
-      .header__imagebox--img--1 {
-        margin-top: -6rem; }
-      .header__imagebox--img--2 {
-        margin-top: -12rem;
-        opacity: 1; }
-      .header__imagebox--img--3 {
-        margin-top: -12rem; }
-  .header__p {
-    font-size: 1.2rem;
-    letter-spacing: 0.2rem; }
-    .header__p span {
-      font-weight: 600; }
-  .header__textboxLeft {
-    border-left: 3px solid white;
-    padding: 2rem 0rem 2rem 1rem; }
-  .header__h3 {
-    font-size: 3rem;
-    letter-spacing: 0.2rem;
+.header__imagebox--img {
+  width: 80%;
+  opacity: 0.7; }
+  .header__imagebox--img--1 {
+    margin-top: -6rem; }
+  .header__imagebox--img--2 {
+    margin-top: -12rem;
+    opacity: 1; }
+  .header__imagebox--img--3 {
+    margin-top: -12rem; }
+
+.header__p {
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem; }
+  .header__p span {
     font-weight: 600; }
+
+.header__textboxLeft {
+  border-left: 3px solid white;
+  padding: 2rem 0rem 2rem 1rem; }
+
+.header__h3 {
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  font-weight: 600; }
 
 /* ==============================================================
                         CUSTOMIZING BOOTSTRAP 
