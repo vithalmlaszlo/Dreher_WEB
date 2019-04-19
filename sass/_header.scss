@@ -1,56 +1,84 @@
 #header {
-    background-image: linear-gradient(to right bottom,
-    rgba(33, 48, 16, 0.95),
-    rgba(126, 202, 39, 0.39)), url(../__img__/bg2.jpg);
-    height: 100vh;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(33, 48, 16, 0.95),
+      rgba(126, 202, 39, 0.39)
+    ),
+    url(../__img__/bg2.jpg);
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header {
-    
-   
+  &__imagebox {
+    &--img {
+      max-width: 250px;
+      opacity: 0.7;
 
-    &__imagebox {
-        
-        &--img {
-            max-width: 250px;
-            opacity: 0.7;
+      &--1 {
+        margin-top: -6rem;
+      }
 
-            &--1 {
-                margin-top:-6rem;
-            }
+      &--2 {
+        margin-top: -12rem;
+        opacity: 1;
+      }
 
-            &--2 {
-                margin-top: -12rem;
-                opacity: 1;
-            }
+      &--3 {
+        margin-top: -12rem;
+      }
+    }
+  }
 
-            &--3 {
-                margin-top:-12rem;
-            }
-        }
+  &__p {
+    font-size: 1.2rem;
+    letter-spacing: 0.15rem;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  &__textboxLeft {
+    border-left: 3px solid rgba(255, 255, 255, 0.8);
+    padding: 4rem 0rem 4rem 1rem;
+  }
+
+  &__textboxRight {
+    border-right: 3px solid rgba(255, 255, 255, 0.8);
+    padding: 4rem 1rem 4rem 0rem;
+  }
+
+  &__input {
+      opacity: 0.7;
+      height: 5.5rem;
+
+      &:focus {
+          outline: pink;
+      }
+  }
+
+  &__h3 {
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    opacity: 0.95;
+
+    &--adult {
+      font-size: 6rem;
+      line-height: 1;
+      font-weight: 600;
     }
 
-    &__p {
-        font-size: 1.2rem;
-        letter-spacing: 0.2rem;
-
-        span {
-            font-weight: 600;
-        }
+    &--sup {
+        margin-left: -1.5rem;
     }
+  }
 
-    &__textboxLeft {
-        border-left: 3px solid white;
-        padding: 2rem 0rem 2rem 1rem;
-        
-    }
-
-    &__h3 {
-        font-size: 3rem;
-        letter-spacing: 0.2rem;
-        font-weight: 600;
-    }
+  &__icon {
+    color: white !important;
+    opacity: 0.8;
+  }
 }

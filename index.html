@@ -34,7 +34,7 @@
                             </a>
                         </li>
                         <li class="navbar__content--li">
-                            <a class="navbar__content--a navbar__content--a--2" href="#singin">
+                            <a class="navbar__content--a navbar__content--a--2 " href="#singin">
                                 <img class="navbar__content--img img-fluid" src="./__img__/bejelentkezes.png"
                                     alt="nyerj-fesztivál-belépőt-bejelentkezés">
                             </a>
@@ -55,13 +55,13 @@
 
                     <div class="text-center">
                         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-                        <i class="icon ion-logo-facebook"></i>
+                        <i class="icon ion-logo-facebook navbar__ion-logo-facebook"></i>
                         <label for="navi-toggle">
                             <div class="social-logo-hidden">
                                 <img src="./__img__/besocial.png" alt="dreher-youtube-facebook-fesztiválbelépő">
                             </div>
                         </label>
-                        <i class="icon ion-logo-youtube"></i>
+                        <i class="icon ion-logo-youtube navbar__ion-logo-youtube"></i>
                     </div>
                     <div class="container-fluid">
                         <a href="#" class="cd-close-menu"><span></span></a>
@@ -77,7 +77,7 @@
             <div class="header__content--inner">
                 <div class="container">
                     <div class="row">
-                        <div class="col-1 col-sm-2 col-md-3 col-lg-4  ">
+                        <div class="col-1 col-sm-2 col-md-3 col-lg-4 p-0 ">
                             <div class="header__textboxLeft d-none d-lg-block">
                                 <h3 class="header__h3">A játék</h3>
                                 <p class="header__p">Töltsd fel a nyitófülön található kódot, hogy megnyerhesd napi
@@ -105,6 +105,10 @@
                                     A nyerteseket minden esetben a sorsolás napján e-mailben értesítjük a
                                     regisztrációkor
                                     megadott e-mail címükön. </p>
+                                <div class="header__social d-flex">
+                                    <a href="#"><i class="icon ion-logo-facebook header__icon"></i></a>
+                                    <a href="#"><i class="icon ion-logo-youtube header__icon"></i></a>
+                                </div>
                             </div>
                         </div>
                         <div class="col-10 col-sm-8  col-md-6 col-lg-4 ">
@@ -120,18 +124,43 @@
                                     alt="">
                                 <img class="header__imagebox--img header__imagebox--img--3"
                                     src="./__img__/dreher_line.png" alt="">
-                                <div class="header__textbox text-center fixed-bottom">
-                                    <p class="header__p">&copy; 2019 <span>Dreher</span> Zrt.</p>
-                                </div>
                             </div>
                         </div>
                         <div class=" col-1 col-sm-2  col-md-3 col-lg-4 ">
-
+                            <div class="header__textboxRight d-none d-lg-block text-right">
+                                <h3 class="header__h3">A kódfeltöltés</h3>
+                                <input class="w-100 header__input " type="text" name="" id="">
+                                <div class="mt-5">
+                                    <img class="img-fluid header__imagebox--img" src="./__img__/bootle_dreher_mask.png" alt="">
+                                </div>
+                                
+                            </div>
                         </div>
                     </div>
+                    <!-- FOOTER START -->
+                    <div class="row ">
+                            <div class="col-8 offset-2 d-flex justify-content-center ">
+                                <div class="header__textbox  d-none d-lg-block mx-5 align-self-end">
+                                    <p class="header__p font-weight-normal mb-0" href="http://www.alkool.info.hu">
+                                        www.alkool.info.hu</p>
+                                </div>
+                                <div class="header__textbox mx-5 align-self-end">
+                                    <p class="header__p mb-0">&copy; 2019 <span>Dreher</span> Zrt.</p>
+                                </div>
+                                <div class="header__textbox mx-5 d-none d-lg-flex align-items-end">
+                                    <div class="div">
+                                        <p class="header__p m-0 p-0 text-right">csak</p>
+                                        <p class="header__p m-0 p-0 text-right">éven</p>
+                                        <p class="header__p m-0 p-0 text-right">felülieknek</p>
+                                    </div>
+                                    <div>
+                                        <p class="header__h3 header__h3--adult m-0 p-0">18 <sup class="header__h3--sup">+</sup></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
-        </div>
         </div>
 
     </header>
@@ -166,6 +195,18 @@
                 regisztrációkor
                 megadott e-mail címükön. </p>
         </div>
+    </section>
+    <section id="thecode" class="">
+            <div class=" col-1 col-sm-2  col-md-3 col-lg-4 ">
+                    <div class="header__textboxRight d-block d-lg-none text-right">
+                        <h3 class="header__h3">A kódfeltöltés</h3>
+                        <input class="w-100 header__input " type="text" name="" id="">
+                        <div class="mt-5">
+                            <img class="img-fluid header__imagebox--img" src="./__img__/bootle_dreher_mask.png" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
     </section>
 
 
