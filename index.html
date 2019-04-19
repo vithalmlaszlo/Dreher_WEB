@@ -25,98 +25,111 @@
                         <a href="#main-nav" class="navbar__container--trigger"><span>&nbsp;</span></a>
                     </header>
                 </div>
-                <div id="main-nav" class="navbar__content d-flex flex-column justify-content-center h-100 ">
+                <div id="main-nav" class="navbar__content d-flex flex-column justify-content-center  ">
                     <ul class="navbar__content--ul ">
                         <li class="navbar__content--li ">
-                            <a class="navbar__content--a navbar__content--a--1" href="#singIn">Bejelentkezés</a>
+                            <a class="navbar__content--a navbar__content--a--1" href="#info">
+                                <img class="navbar__content--img img-fluid" src="./__img__/info.png"
+                                    alt="nyerj-fesztivál-belépőt-információ">
+                            </a>
                         </li>
                         <li class="navbar__content--li">
-                            <a class="navbar__content--a navbar__content--a--2" href="#info">Információ</a>
+                            <a class="navbar__content--a navbar__content--a--2" href="#singin">
+                                <img class="navbar__content--img img-fluid" src="./__img__/bejelentkezes.png"
+                                    alt="nyerj-fesztivál-belépőt-bejelentkezés">
+                            </a>
                         </li>
                         <li class="navbar__content--li">
-                            <a class="navbar__content--a navbar__content--a--3" href="#gift">Nyeremények</a>
+                            <a class="navbar__content--a navbar__content--a--3" href="#winners">
+                                <img class="navbar__content--img img-fluid" src="./__img__/nyertesek.png"
+                                    alt="nyerj-fesztiválbelépőt-nyertesek">
+                            </a>
                         </li>
                         <li class="navbar__content--li">
-                            <a class="navbar__content--a navbar__content--a--4" href="#winners">Nyertesek</a>
+                            <a class="navbar__content--a navbar__content--a--4" href="#winners">
+                                <img class="navbar__content--img img-fluid" src="./__img__/nyeremenyek.png"
+                                    alt="nyerj-fesztiválbelépőt-nyeremények">
+                            </a>
                         </li>
                     </ul>
+
+                    <div class="text-center">
+                        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+                        <i class="icon ion-logo-facebook"></i>
+                        <label for="navi-toggle">
+                            <div class="social-logo-hidden">
+                                <img src="./__img__/besocial.png" alt="dreher-youtube-facebook-fesztiválbelépő">
+                            </div>
+                        </label>
+                        <i class="icon ion-logo-youtube"></i>
+                    </div>
                     <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-4">
-                            </div>
-                            <div class="col-4 p-0 mt-3 d-flex justify-content-center">
-                                <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-                                <i class="icon ion-logo-apple"></i>
-                                <i class="icon ion-logo-facebook"></i>
-                                <i class="icon ion-logo-twitter"></i>
-                                <label for="navi-toggle">
-                                    <div class="social-logo-hidden">
-                                        <img src="./__img__/besocial_logo_black.png" alt="">
-                                    </div>
-                                </label>
-                                <i class="icon ion-logo-instagram"></i>
-                                <i class="icon ion-logo-ionic"></i>
-                                <i class="icon ion-logo-linkedin"></i>
-                            </div>
-                            <a href="#" class="cd-close-menu"><span></span></a>
-                        </div>
+                        <a href="#" class="cd-close-menu"><span></span></a>
                     </div>
                 </div>
+            </div>
             </div>
         </nav>
         <!-- END NAVBAR -->
 
-        <div class="header__content h-100">
+        <div class="header__content h-100 d-flex align-items-center justify-content-center">
             <!-- text-center bootstrap alaignment -->
-            <div class="header__content--inner" ">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-1 col-sm-2 col-md-3 col-lg-4  ">
-                               <!--  <div class="header__textboxLeft">
-                                    <h3 class="header__h3">A játék</h3>
-                                    <p class="header__p">Töltsd fel a nyitófülön található kódot, hogy megnyerhesd napi
-                                        nyereményeinket - Sziget
-                                        napijegy vouchereket és DreherFeszt páros belépőket! Ha pedig igazán szerencsés vagy, még
-                                        egy VIP Sziget és VIP DreherFeszt bulit is nyerhetsz!
-                                        <br> <br>
-                                        Mivel a DreherFeszt Játék indulása technikai problémák miatt nem történt meg július 2-án,
-                                        hanem csak július 3-án indult el a kódfeltöltés, kompenzálásként a Játékot a Dreher
-                                        Sörgyárak Zrt. 2 nappal meghosszabbítja, így az eredetileg meghirdetetthez képest plusz 10
-                                        darab párosjegyet sorsol ki a résztvevők között augusztus 29-én reggel 10-kor.
-                                        <br><br>
-                                        A promóciók időtartama:
-                                        Sziget: 2018. június 11. – augusztus 5.
-                                        Dreherfeszt: 2018. július 2. – augusztus 28.
-                                        A sorsolások mindkét promóció esetében 8 játékhéten keresztül zajlanak. A sorsolások minden
-                                        esetben az adott Játéknap után következő első munkanap reggel 10 órakor zajlanak. A fődíj
-                                        sorsolása a promóciós időszak utáni első napon, reggel 10:30 perckor történik.
-                                        <br><br>
-                                        A nyerteseket minden esetben a sorsolás napján e-mailben értesítjük a regisztrációkor
-                                        megadott e-mail címükön. </p>
-                                </div> -->
-                            </div>
-                            <div class="col-10 col-sm-8  col-md-6 col-lg-4">
-                                <div class="header__imagebox text-center">
-                                    <a href="http://dreher.hu" target="_blank">
-                                        <img class="header__imagebox--img" src="./__img__/dreher-logo-white.png" alt="">
-                                    </a>
-                                    <a href="http://szigetfesztival.com" target="_blank">
-                                        <img class=" header__imagebox--img header__imagebox--img--1" src="./__img__/sziget-logo.png"
-                                            alt="">
-                                    </a>
-                                    <img class="header__imagebox--img header__imagebox--img--2" src="./__img__/nyerj.png" alt="">
-                                    <img class="header__imagebox--img header__imagebox--img--3" src="./__img__/dreher_line.png"
-                                        alt="">
-                                    <div class="header__textbox text-center fixed-bottom">
-                                        <p class="header__p">&copy; 2019 <span>Dreher</span> Zrt.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-1 col-sm-2  col-md-3 col-lg-4 ">
-                                
+            <div class="header__content--inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-1 col-sm-2 col-md-3 col-lg-4  ">
+                            <div class="header__textboxLeft d-none d-lg-block">
+                                <h3 class="header__h3">A játék</h3>
+                                <p class="header__p">Töltsd fel a nyitófülön található kódot, hogy megnyerhesd napi
+                                    nyereményeinket - Sziget
+                                    napijegy vouchereket és DreherFeszt páros belépőket! Ha pedig igazán szerencsés
+                                    vagy, még
+                                    egy VIP Sziget és VIP DreherFeszt bulit is nyerhetsz!
+                                    <br> <br>
+                                    Mivel a DreherFeszt Játék indulása technikai problémák miatt nem történt meg július
+                                    2-án,
+                                    hanem csak július 3-án indult el a kódfeltöltés, kompenzálásként a Játékot a Dreher
+                                    Sörgyárak Zrt. 2 nappal meghosszabbítja, így az eredetileg meghirdetetthez képest
+                                    plusz 10
+                                    darab párosjegyet sorsol ki a résztvevők között augusztus 29-én reggel 10-kor.
+                                    <br><br>
+                                    A promóciók időtartama:
+                                    Sziget: 2018. június 11. – augusztus 5.
+                                    Dreherfeszt: 2018. július 2. – augusztus 28.
+                                    A sorsolások mindkét promóció esetében 8 játékhéten keresztül zajlanak. A sorsolások
+                                    minden
+                                    esetben az adott Játéknap után következő első munkanap reggel 10 órakor zajlanak. A
+                                    fődíj
+                                    sorsolása a promóciós időszak utáni első napon, reggel 10:30 perckor történik.
+                                    <br><br>
+                                    A nyerteseket minden esetben a sorsolás napján e-mailben értesítjük a
+                                    regisztrációkor
+                                    megadott e-mail címükön. </p>
                             </div>
                         </div>
+                        <div class="col-10 col-sm-8  col-md-6 col-lg-4 ">
+                            <div class="header__imagebox text-center">
+                                <a href="http://dreher.hu" target="_blank">
+                                    <img class="header__imagebox--img" src="./__img__/dreher-logo-white.png" alt="">
+                                </a>
+                                <a href="http://szigetfesztival.com" target="_blank">
+                                    <img class=" header__imagebox--img header__imagebox--img--1"
+                                        src="./__img__/sziget-logo.png" alt="">
+                                </a>
+                                <img class="header__imagebox--img header__imagebox--img--2" src="./__img__/nyerj.png"
+                                    alt="">
+                                <img class="header__imagebox--img header__imagebox--img--3"
+                                    src="./__img__/dreher_line.png" alt="">
+                                <div class="header__textbox text-center fixed-bottom">
+                                    <p class="header__p">&copy; 2019 <span>Dreher</span> Zrt.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-1 col-sm-2  col-md-3 col-lg-4 ">
+
+                        </div>
                     </div>
+                </div>
             </div>
         </div>
         </div>
@@ -124,8 +137,35 @@
     </header>
     <!-- END HEADER -->
 
-    <section id="pink" class="">
-
+    <section id="thegame" class="">
+        <div class="header__textboxLeft d-block d-lg-none">
+            <h3 class="header__h3">A játék</h3>
+            <p class="header__p">Töltsd fel a nyitófülön található kódot, hogy megnyerhesd napi
+                nyereményeinket - Sziget
+                napijegy vouchereket és DreherFeszt páros belépőket! Ha pedig igazán szerencsés
+                vagy, még
+                egy VIP Sziget és VIP DreherFeszt bulit is nyerhetsz!
+                <br> <br>
+                Mivel a DreherFeszt Játék indulása technikai problémák miatt nem történt meg július
+                2-án,
+                hanem csak július 3-án indult el a kódfeltöltés, kompenzálásként a Játékot a Dreher
+                Sörgyárak Zrt. 2 nappal meghosszabbítja, így az eredetileg meghirdetetthez képest
+                plusz 10
+                darab párosjegyet sorsol ki a résztvevők között augusztus 29-én reggel 10-kor.
+                <br><br>
+                A promóciók időtartama:
+                Sziget: 2018. június 11. – augusztus 5.
+                Dreherfeszt: 2018. július 2. – augusztus 28.
+                A sorsolások mindkét promóció esetében 8 játékhéten keresztül zajlanak. A sorsolások
+                minden
+                esetben az adott Játéknap után következő első munkanap reggel 10 órakor zajlanak. A
+                fődíj
+                sorsolása a promóciós időszak utáni első napon, reggel 10:30 perckor történik.
+                <br><br>
+                A nyerteseket minden esetben a sorsolás napján e-mailben értesítjük a
+                regisztrációkor
+                megadott e-mail címükön. </p>
+        </div>
     </section>
 
 
