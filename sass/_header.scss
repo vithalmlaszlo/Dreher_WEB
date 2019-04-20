@@ -1,18 +1,16 @@
 #header {
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(33, 48, 16, 0.95),
-      rgba(126, 202, 39, 0.39)
-    ),
-    url(../__img__/bg2.jpg);
   height: 100vh;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
 }
 
 .header {
   &__imagebox {
+
+    &--beer {
+      max-width: 220px;
+      opacity: 0.7;
+    }
+
     &--img {
       max-width: 250px;
       opacity: 0.7;

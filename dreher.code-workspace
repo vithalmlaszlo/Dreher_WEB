@@ -7,5 +7,7 @@
 			"path": "/Users/laci/Projects/menu-js-bootstrap-2"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "untitled folder"
+	}
 }

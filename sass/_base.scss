@@ -34,8 +34,18 @@ body {
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 300;
     font-size: 2rem;
-    background-color: rgba(216, 216, 216, 0.253);
     color: rgba(255, 255, 255, 0.8);
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(33, 48, 16, 0.95),
+        rgba(126, 202, 39, 0.39)
+      ),
+      url(../__img__/bg2.jpg);
+    background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+    
 }
 
 /* ==============================================================

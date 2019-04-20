@@ -162,7 +162,7 @@
 
   &:hover {
     cursor: pointer;
-    transform: translateY(-0.7rem);
+    transform: translateY(-0.3rem);
   }
 }
 
@@ -172,9 +172,10 @@
   color: rgb(178, 67, 89);
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.805);
 
   &:hover {
-    text-shadow: 1px 1px 3px rgba(34, 34, 34, 0.805);
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.805);
     cursor: pointer;
   }
 }

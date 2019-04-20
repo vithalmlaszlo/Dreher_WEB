@@ -15,6 +15,7 @@ jQuery(document).ready(function ($) {
          $('.navbar__content--a--4').addClass('in--4'); 
          $('.navbar__container--trigger').css ('display', 'none');
          $('.header__imagebox').css ('display', 'none');
+         $('#content').css('opacity', '0.3');
 
 
          $('.ion-logo-apple').addClass('goleft--apple');
@@ -31,6 +32,8 @@ jQuery(document).ready(function ($) {
          $('.navbar__content--a--4').removeClass('in--4'); 
          $('.navbar__container--trigger').css ('display', 'block');
          $('.header__imagebox').css ('display', 'block');
+         $('#content').css('opacity', '1');
+
       
 
          $('.ion-logo-apple').removeClass('goleft--apple');
