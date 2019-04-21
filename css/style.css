@@ -7093,8 +7093,6 @@ h1 {
 .header__p {
   font-size: 1.2rem;
   letter-spacing: 0.15rem; }
-  .header__p span {
-    font-weight: 600; }
 
 .header__textboxLeft {
   border-left: 3px solid rgba(255, 255, 255, 0.8);
@@ -7105,10 +7103,45 @@ h1 {
   padding: 4rem 1rem 4rem 0rem; }
 
 .header__input {
-  opacity: 0.7;
-  height: 5.5rem; }
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
+  text-align: right;
+  height: 4.5rem;
+  outline: none;
+  font-weight: 700;
+  letter-spacing: 0.2rem; }
+  .header__input::placeholder {
+    color: back;
+    text-transform: lowercase; }
   .header__input:focus {
-    outline: pink; }
+    outline: none;
+    border-bottom: 0.3rem solid #2c722c; }
+  .header__input:focus:invalid {
+    border-bottom: 0.3rem solid #b24359; }
+
+.header__btn {
+  position: relative;
+  background-color: transparent;
+  font-size: 1.3rem;
+  padding: 1.3rem 3rem;
+  margin-top: 1rem;
+  color: white;
+  letter-spacing: 0.3rem;
+  opacity: 0.7;
+  overflow: hidden; }
+  .header__btn::after {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all 0.3s; }
+  .header__btn:hover::after {
+    transform: translateX(0); }
 
 .header__h3 {
   font-size: 3rem;
@@ -7135,8 +7168,8 @@ h1 {
 .navbar__container--trigger {
   display: inline-block;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 0px;
+  top: 0px;
   height: 50px;
   width: 50px;
   line-height: 50px;

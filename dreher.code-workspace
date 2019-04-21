@@ -5,9 +5,12 @@
 		},
 		{
 			"path": "/Users/laci/Projects/menu-js-bootstrap-2"
+		},
+		{
+			"path": "/Users/laci/Projects/cross-sass-bootstrap-2-Jquery"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "untitled folder"
+		"liveServer.settings.multiRootWorkspaceName": "cross-sass-bootstrap-2-Jquery"
 	}
 }
