@@ -15,7 +15,6 @@ jQuery(document).ready(function($) {
     $(".navbar__container--trigger").css("display", "none");
     $(".header__imagebox").css("display", "none");
     $("#content").css("opacity", "0.3");
-    $(".ion-logo-apple").addClass("goleft--apple");
   });
   //close menu
   $(".cd-close-menu").on("click", function(event) {

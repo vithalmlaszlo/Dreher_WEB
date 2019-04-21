@@ -14,9 +14,9 @@
 
 </head>
 
-<body>
+<body data-spy="scroll">
     <!-- START HEADER -->
-    <header id="header" class="header">
+    <header id="header" class="header singin">
         <!-- SIMPLE NAVBAR -->
         <nav class="">
             <div class="container">
@@ -74,42 +74,29 @@
         <div class="h-100 d-flex align-items-center justify-content-center">
             <!-- text-center bootstrap alaignment -->
             <div class="container mt-5">
+                <div class="row d-lg-none ">
+                    <div class="col-8 mx-auto text-center" >
+                        <a  href="http://dreher.hu" target="_blank">
+                            <img class="singin__img" src="./__img__/dreher-logo-white.png" alt="">
+                        </a>
+                    </div>
+                </div>
                 <div class="row">
-                    <div class="col-1 col-sm-2 col-md-3 col-lg-4 p-0 ">
-                        <div class="header__textboxLeft d-none d-lg-block">
-                            <h3 class="header__h3">A játék</h3>
-                            <p class="header__p">Töltsd fel a nyitófülön található kódot, hogy megnyerhesd napi
-                                nyereményeinket - Sziget
-                                napijegy vouchereket és DreherFeszt páros belépőket! Ha pedig igazán szerencsés
-                                vagy, még
-                                egy VIP Sziget és VIP DreherFeszt bulit is nyerhetsz!
-                                <br> <br>
-                                Mivel a DreherFeszt Játék indulása technikai problémák miatt nem történt meg július
-                                2-án,
-                                hanem csak július 3-án indult el a kódfeltöltés, kompenzálásként a Játékot a Dreher
-                                Sörgyárak Zrt. 2 nappal meghosszabbítja, így az eredetileg meghirdetetthez képest
-                                plusz 10
-                                darab párosjegyet sorsol ki a résztvevők között augusztus 29-én reggel 10-kor.
-                                <br><br>
-                                A promóciók időtartama:
-                                Sziget: 2018. június 11. – augusztus 5.
-                                Dreherfeszt: 2018. július 2. – augusztus 28.
-                                A sorsolások mindkét promóció esetében 8 játékhéten keresztül zajlanak. A sorsolások
-                                minden
-                                esetben az adott Játéknap után következő első munkanap reggel 10 órakor zajlanak. A
-                                fődíj
-                                sorsolása a promóciós időszak utáni első napon, reggel 10:30 perckor történik.
-                                <br><br>
-                                A nyerteseket minden esetben a sorsolás napján e-mailben értesítjük a
-                                regisztrációkor
-                                megadott e-mail címükön. </p>
-                            <div class="header__social d-flex">
-                                <a href="#"><i class="icon ion-logo-facebook header__icon"></i></a>
-                                <a href="#"><i class="icon ion-logo-youtube header__icon"></i></a>
-                            </div>
+                    <div class="col-md-6 col-lg-4 ">
+                        <div class="singin__textboxLeft d-block ">
+                            <h3 class="singin__h3">Bejelentkezés</h3>
+                            <form class="singin__form" action="">
+                                <input class="w-100 singin__input mb-3" type="email" name="email" placeholder="email"
+                                    required>
+                                <input class="w-100 singin__input " type="password" name="password"
+                                    placeholder="password" required>
+                                <button class="singin__btn" type="submit">beküld</button>
+                            </form>
+
+
                         </div>
                     </div>
-                    <div class="col-10 col-sm-8  col-md-6 col-lg-4 ">
+                    <div class="d-none d-lg-block col-lg-4 ">
                         <div class="header__imagebox text-center">
                             <a href="http://dreher.hu" target="_blank">
                                 <img class="header__imagebox--img" src="./__img__/dreher-logo-white.png" alt="">
@@ -130,18 +117,51 @@
 
                         </div>
                     </div>
-                    <div class=" col-1 col-sm-2  col-md-3 col-lg-4 ">
-                        <div class="header__textboxRight d-none d-lg-block text-right">
-                            <h3 class="header__h3">A kódfeltöltés</h3>
-                            <form class="header__form" action="">
-                                <input class="w-100 header__input " type="email" name="" id="input" required>
-                                <button class="header__btn" type="submit">beküld</button>
-                            </form>
-                            <div class="mt-5">
-                                <img class="img-fluid  header__imagebox--beer" src="./__img__/bootle_dreher_mask.png"
-                                    alt="">
-                            </div>
+                    <div class="col-md-6 col-lg-4 ">
+                        <div class="singin__textboxRight d-block text-left">
+                            <h3 class="singin__h3">Regisztráció</h3>
+                            <form class="singin__form" action="">
+                                <input class="w-100 singin__input mb-3" type="name" name="" placeholder="név" required>
+                                <input class="w-100 singin__input mb-3" type="email" name="" placeholder="email" required>
+                                <p class="singin__p">Születési dátum:</p>
+                                <!-- Sing In Date -->
+                                <div class="d-flex mb-3">
+                                    <div class="singin__date">
+                                        <input class="singin__input--year" type="text" name="" maxlength="1"
+                                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                                        <input class="singin__input--year" type="text" name="" maxlength="1"
+                                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                                        <input class="singin__input--year" type="text" name="" maxlength="1"
+                                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                                        <input class="singin__input--year" type="text" name="" maxlength="1"
+                                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                                    </div>
+                                    <p class="mx-2">-</p>
+                                    <div class="singin__date">
+                                        <input class="singin__input--year" type="text" name="" maxlength="1"
+                                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                                        <input class="singin__input--year" type="text" name="" maxlength="1"
+                                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                                    </div>
+                                    <p class="mx-2">-</p>
+                                    <div class="singin__date">
+                                        <input class="singin__input--year" type="text" name="" maxlength="1"
+                                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                                        <input class="singin__input--year" type="text" name="" maxlength="1"
+                                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                                    </div>
+                                </div> <!-- End date -->
+                                <input class="w-100 singin__input mb-3" type="password" name="" placeholder="jelszó" required>
+                                <input class="w-100 singin__input mb-3" type="password" name="" placeholder="jelszó megerősítése" required>
+                                <div class="singin__check d-flex">
+                                    <input type="checkbox" class="singin__input">
+                                    <p class="singin__p">A Dreher Adatvédelmi Szabályzat és Dreher 
+                                            Adatvédelmi Tájékoztató rendelkezéseit elolvastam, személyes adataim kezeléséhez hozzájárulok</p>
 
+                                </div>
+
+                                <button class="singin__btn" type="submit">beküld</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -171,71 +191,6 @@
         </div>
 
     </header> <!-- END HEADER -->
-
-    <!-- START COL-MD -->
-    <section id="content" class="content">
-        <div class="container">
-            <div class="row">
-                <div class="col-10 offset-1 col-sm-8 offset-sm-2 px-5">
-                    <div class="header__textboxLeft d-block d-lg-none">
-                        <h3 class="header__h3 text-center">A játék</h3>
-                        <p class="header__p">Töltsd fel a nyitófülön található kódot, hogy megnyerhesd napi
-                            nyereményeinket - Sziget
-                            napijegy vouchereket és DreherFeszt páros belépőket! Ha pedig igazán szerencsés
-                            vagy, még
-                            egy VIP Sziget és VIP DreherFeszt bulit is nyerhetsz!
-                            <br> <br>
-                            Mivel a DreherFeszt Játék indulása technikai problémák miatt nem történt meg július
-                            2-án,
-                            hanem csak július 3-án indult el a kódfeltöltés, kompenzálásként a Játékot a Dreher
-                            Sörgyárak Zrt. 2 nappal meghosszabbítja, így az eredetileg meghirdetetthez képest
-                            plusz 10
-                            darab párosjegyet sorsol ki a résztvevők között augusztus 29-én reggel 10-kor.
-                            <br><br>
-                            A promóciók időtartama:
-                            Sziget: 2018. június 11. – augusztus 5.
-                            Dreherfeszt: 2018. július 2. – augusztus 28.
-                            A sorsolások mindkét promóció esetében 8 játékhéten keresztül zajlanak. A sorsolások
-                            minden
-                            esetben az adott Játéknap után következő első munkanap reggel 10 órakor zajlanak. A
-                            fődíj
-                            sorsolása a promóciós időszak utáni első napon, reggel 10:30 perckor történik.
-                            <br><br>
-                            A nyerteseket minden esetben a sorsolás napján e-mailben értesítjük a
-                            regisztrációkor
-                            megadott e-mail címükön. </p>
-                        <div class="header__social d-flex justify-content-center">
-                            <a href="#"><i class="icon ion-logo-facebook header__icon"></i></a>
-                            <a href="#"><i class="icon ion-logo-youtube header__icon"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-10 offset-1 col-sm-8 offset-sm-2 px-5 ">
-                    <div class="header__textboxRight d-block d-lg-none text-center">
-                        <h3 class="header__h3">A kódfeltöltés</h3>
-                        <form class="header__form" action="">
-                            <input class="w-100 header__input " type="email" name="" id="" required>
-                            <button class="header__btn" type="submit">beküld</button>
-                        </form>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-8 offset-2 d-flex text-center justify-content-center ">
-                <div class="header__textbox d-block d-lg-none my-3 mx-3 align-self-end">
-                    <p class="header__p font-weight-normal mb-0" href="http://www.alkool.info.hu">
-                        www.alkool.info.hu</p>
-                </div>
-                <div class="header__textbox d-block d-lg-none mx-3 my-3 align-self-end ">
-                    <p class="header__p mb-0">&copy; 2019 <span>Dreher</span> Zrt.</p>
-                </div>
-            </div>
-        </div>
-
-    </section> <!-- END COL_MD -->
-
 
 
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"
