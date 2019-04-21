@@ -14,7 +14,7 @@
 
 </head>
 
-<body>
+<body data-spy="scroll">
     <!-- START HEADER -->
     <header id="header" class="header">
         <!-- SIMPLE NAVBAR -->
@@ -55,13 +55,13 @@
 
                     <div class="text-center">
                         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-                        <i class="icon ion-logo-facebook navbar__ion-logo-facebook"></i>
+                        <i class="icon icon-nav ion-logo-facebook navbar__ion-logo-facebook"></i>
                         <label for="navi-toggle">
                             <div class="social-logo-hidden">
                                 <img src="./__img__/besocial.png" alt="dreher-youtube-facebook-fesztiválbelépő">
                             </div>
                         </label>
-                        <i class="icon ion-logo-youtube navbar__ion-logo-youtube"></i>
+                        <i class="icon icon-nav ion-logo-youtube navbar__ion-logo-youtube"></i>
                     </div>
                     <div class="container-fluid">
                         <a href="#" class="cd-close-menu"><span></span></a>
@@ -73,7 +73,7 @@
 
         <div class="h-100 d-flex align-items-center justify-content-center">
             <!-- text-center bootstrap alaignment -->
-            <div class="container">
+            <div class="container mt-5">
                 <div class="row">
                     <div class="col-1 col-sm-2 col-md-3 col-lg-4 p-0 ">
                         <div class="header__textboxLeft d-none d-lg-block">
@@ -122,6 +122,12 @@
                                 alt="">
                             <img class="header__imagebox--img header__imagebox--img--3" src="./__img__/dreher_line.png"
                                 alt="">
+                            <div class="header__imagebox--down">
+                                <a href="#content" class="smoothscroll">
+                                    <i class="icon ion-ios-arrow-down header__icon header__icon--down"></i>
+                                </a>
+                            </div>
+
                         </div>
                     </div>
                     <div class=" col-1 col-sm-2  col-md-3 col-lg-4 ">
@@ -206,7 +212,8 @@
                         <form class="header__form" action="">
                             <input class="w-100 header__input " type="email" name="" id="" required>
                             <button class="header__btn" type="submit">beküld</button>
-                        </form>                        <div class="mt-5">
+                        </form>
+                        <div class="mt-5">
                             <img class="img-fluid header__imagebox--img" src="./__img__/bootle_dreher_mask.png" alt="">
                         </div>
                     </div>
@@ -214,7 +221,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-8 offset-2 d-md-flex text-center justify-content-center ">
+            <div class="col-8 offset-2 d-flex text-center justify-content-center ">
                 <div class="header__textbox d-block d-lg-none my-3 mx-3 align-self-end">
                     <p class="header__p font-weight-normal mb-0" href="http://www.alkool.info.hu">
                         www.alkool.info.hu</p>
@@ -222,6 +229,10 @@
                 <div class="header__textbox d-block d-lg-none mx-3 my-3 align-self-end ">
                     <p class="header__p mb-0">&copy; 2019 <span>Dreher</span> Zrt.</p>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 m-auto">
                 <div class="header__textbox justify-content-center d-flex d-lg-none mx-3 my-3 align-items-end">
                     <div class="div">
                         <p class="header__p m-0 p-0 text-right">csak</p>
