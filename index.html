@@ -4,12 +4,32 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Cross Project</title>
+    <title>Nyerj Fesziválbelépőt a Dréherrel!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="Author" content="Laszlo Vithalm">
+    <meta name="country" content="Hungary">
+    <meta name="revisit-after" content="30 days">
+
+    <meta property="og:title" content="Nyerj Fesziválbelépőt a Dréherrel!" />
+    <meta property=”og:site_name” content="Nyerj Fesziválbelépőt a Dréherrel!" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="http://nyerjfesztivalbelepot.hu">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./__img__/_favicon_package/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./__img__/_favicon_package/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./__img__/_favicon_package/favicon-16x16.png">
+    <link rel="manifest" href="./__img__/_favicon_package/site.webmanifest">
+    <link rel="mask-icon" href="./__img__/_favicon_package/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
     <link href="https://unpkg.com/ionicons@4.4.4/dist/css/ionicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&amp;subset=latin-ext"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">
 
 </head>
@@ -25,8 +45,11 @@
                         <a href="#main-nav" class="navbar__container--trigger"><span>&nbsp;</span></a>
                     </header>
                 </div>
-                <div id="main-nav" class="navbar__content d-flex flex-column justify-content-center  ">
-                    <ul class="navbar__content--ul ">
+                <div id="main-nav" class="navbar__content d-flex flex-column justify-content-center">
+                    <div class="navbar__content--logoIn text-center mb-3">
+                        <img class="img-fluid" src="./__img__/sziget-logo.png" alt="">
+                    </div>
+                    <ul class="navbar__content--ul mb-0">
                         <li class="navbar__content--li ">
                             <a class="navbar__content--a navbar__content--a--1" href="#info">
                                 <img class="navbar__content--img img-fluid" src="./__img__/info.png"
@@ -52,17 +75,8 @@
                             </a>
                         </li>
                     </ul>
-
-                    <div class="text-center">
-                        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-                        <i class="icon icon-nav ion-logo-facebook navbar__ion-logo-facebook"></i>
-                        <label for="navi-toggle">
-                            <div class="social-logo-hidden">
-                                <img src="./__img__/besocial.png" alt="dreher-youtube-facebook-fesztiválbelépő">
-                            </div>
-                        </label>
-                        <i class="icon icon-nav ion-logo-youtube navbar__ion-logo-youtube"></i>
-                    </div>
+                    
+                    <!-- Menu close -->
                     <div class="container-fluid">
                         <a href="#" class="cd-close-menu"><span></span></a>
                     </div>
@@ -71,11 +85,11 @@
             </div>
         </nav> <!-- END NAVBAR -->
 
+        <!-- START CONTENT -->
         <div class="h-100 d-flex align-items-center justify-content-center">
-            <!-- text-center bootstrap alaignment -->
             <div class="container mt-5">
                 <div class="row">
-                    <div class="col-1 col-sm-2 col-md-3 col-lg-4 p-0 ">
+                    <div class=" col-1 col-sm-2 col-md-3 col-lg-4 p-0 ">
                         <div class="header__textboxLeft d-none d-lg-block">
                             <h3 class="header__h3">A játék</h3>
                             <p class="header__p">Töltsd fel a nyitófülön található kódot, hogy megnyerhesd napi
@@ -104,12 +118,12 @@
                                 regisztrációkor
                                 megadott e-mail címükön. </p>
                             <div class="header__social d-flex">
-                                <a href="#"><i class="icon ion-logo-facebook header__icon"></i></a>
-                                <a href="#"><i class="icon ion-logo-youtube header__icon"></i></a>
+                                <a href="#"><i class="icon ion-logo-facebook header__social--icon"></i></a>
+                                <a href="#"><i class="icon ion-logo-youtube header__social--icon"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-10 col-sm-8  col-md-6 col-lg-4 ">
+                    <div class="col-10 col-sm-8  col-md-6 col-lg-4 animated bounceInDown">
                         <div class="header__imagebox text-center">
                             <a href="http://dreher.hu" target="_blank">
                                 <img class="header__imagebox--img" src="./__img__/dreher-logo-white.png" alt="">
@@ -124,7 +138,7 @@
                                 alt="">
                             <div class="header__imagebox--down d-block d-lg-none">
                                 <a href="#content" class="smoothscroll header__imagebox--down d-block d-lg-none">
-                                    <i class="icon ion-ios-arrow-down header__icon header__icon--down"></i>
+                                    <i class="icon ion-ios-arrow-down header__social header__social--icon header__social--down"></i>
                                 </a>
                             </div>
 
@@ -134,11 +148,11 @@
                         <div class="header__textboxRight d-none d-lg-block text-right">
                             <h3 class="header__h3">A kódfeltöltés</h3>
                             <form class="header__form" action="">
-                                <input class="w-100 header__input " type="email" name="" id="input" required>
-                                <button class="header__btn" type="submit">beküld</button>
+                                <input class="w-100 header__input " type="email" name="" id="input" spellcheck="false" required>
+                                <button class="header__btn font-weight-bold" type="submit">beküld</button>
                             </form>
                             <div class="mt-5">
-                                <img class="img-fluid  header__imagebox--beer" src="./__img__/bootle_dreher_mask.png"
+                                <img class="img-fluid  header__beer" src="./__img__/bootle_dreher_mask.png"
                                     alt="">
                             </div>
 
@@ -166,13 +180,13 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> <!-- FOOTER END -->
             </div>
-        </div>
+        </div> <!-- END CONTENT -->
 
     </header> <!-- END HEADER -->
 
-    <!-- START COL-MD -->
+    <!-- RESPONSIVE CONTENT -->
     <section id="content" class="content">
         <div class="container">
             <div class="row">
@@ -205,8 +219,8 @@
                             regisztrációkor
                             megadott e-mail címükön. </p>
                         <div class="header__social d-flex justify-content-center">
-                            <a href="#"><i class="icon ion-logo-facebook header__icon"></i></a>
-                            <a href="#"><i class="icon ion-logo-youtube header__icon"></i></a>
+                            <a href="#"><i class="icon ion-logo-facebook header__social--icon"></i></a>
+                            <a href="#"><i class="icon ion-logo-youtube header__social--icon"></i></a>
                         </div>
                     </div>
                 </div>
@@ -214,8 +228,8 @@
                     <div class="header__textboxRight d-block d-lg-none text-center">
                         <h3 class="header__h3">A kódfeltöltés</h3>
                         <form class="header__form" action="">
-                            <input class="w-100 header__input " type="email" name="" id="" required>
-                            <button class="header__btn" type="submit">beküld</button>
+                            <input class="w-100 header__input " type="email" name="" id=""spellcheck="false" required>
+                            <button class="header__btn font-weight-bold" type="submit">beküld</button>
                         </form>
 
                     </div>
@@ -234,7 +248,7 @@
             </div>
         </div>
 
-    </section> <!-- END COL_MD -->
+    </section> <!-- END RESPONSIVE CONTENT -->
 
 
 

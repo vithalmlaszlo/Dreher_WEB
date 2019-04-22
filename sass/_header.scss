@@ -1,15 +1,55 @@
-#header {
-  height: 100vh;
-}
-
 .header {
-  &__imagebox {
+  height: 100vh;
 
-    &--beer {
-      max-width: 220px;
-      opacity: 0.7;
+  /* LEFT */
+  &__textboxLeft {
+    border-left: 3px solid rgba(255, 255, 255, 0.8);
+    padding: 4rem 0rem 4rem 1rem;
+
+    @media only screen and (max-width: 992px) {
+      border-left: none;
     }
+  }
 
+  &__h3 {
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    opacity: 0.95;
+
+    &--adult {
+      font-size: 6rem;
+      line-height: 1;
+      font-weight: 600;
+    }
+  }
+
+  &__p {
+    font-size: 1.2rem;
+    letter-spacing: 0.15rem;
+  }
+
+  &__social {
+    &--icon {
+      color: white !important;
+      opacity: 0.8;
+      display: inline-block;
+      font-size: 3.35rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+    &--down {
+      font-size: 5rem;
+      transition: all 0.2s;
+
+      &:hover {
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  /* CENTER */
+  &__imagebox {
     &--img {
       max-width: 250px;
       opacity: 0.7;
@@ -33,20 +73,7 @@
     }
   }
 
-  &__p {
-    font-size: 1.2rem;
-    letter-spacing: 0.15rem;
-  }
-
-  &__textboxLeft {
-    border-left: 3px solid rgba(255, 255, 255, 0.8);
-    padding: 4rem 0rem 4rem 1rem;
-
-    @media only screen and (max-width: 992px) {
-      border-left: none;
-    }
-  }
-
+  /* RIGHT */
   &__textboxRight {
     border-right: 3px solid rgba(255, 255, 255, 0.8);
     padding: 4rem 1rem 4rem 0rem;
@@ -82,19 +109,18 @@
 
   &__btn {
     position: relative;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.3);;
     font-size: 1.3rem;
     padding: 1.3rem 3rem;
     margin-top: 1rem;
     color: white;
     letter-spacing: 0.3rem;
     opacity: 0.7;
-
     overflow: hidden;
 
     &::after {
       content: "";
-      background-color: rgba(255, 255, 255, 0.3);
+      background-color: rgba(255, 255, 255, 0.35);
       position: absolute;
       height: 100%;
       width: 100%;
@@ -109,34 +135,8 @@
     }
   }
 
-  &__h3 {
-    font-size: 3rem;
-    letter-spacing: 0.2rem;
-    font-weight: 600;
-    opacity: 0.95;
-
-    &--adult {
-      font-size: 6rem;
-      line-height: 1;
-      font-weight: 600;
-    }
-  }
-
-  &__icon {
-    color: white !important;
-    opacity: 0.8;
-    display: inline-block;
-    font-size: 3.35rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-
-    &--down {
-      font-size: 5rem;
-      transition: all 0.2s;
-
-      &:hover {
-        transform: translateY(-2px);
-      }
-    }
+  &__beer {
+    max-width: 220px;
+    opacity: 0.7;
   }
 }

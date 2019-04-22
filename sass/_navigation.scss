@@ -14,44 +14,44 @@
   font-weight: bold;
   font-size: 14px;
   font-size: 0.875rem;
-}
 
-.navbar__container--trigger span {
-  position: relative;
-  display: inline-block;
-  width: 18px;
-  height: 2px;
-  background-color: rgba(255, 255, 255, 0.8);
-  vertical-align: middle;
-  transform: translateY(-2px);
-}
+  & span {
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.8);
+    vertical-align: middle;
+    transform: translateY(-2px);
 
-.navbar__container--trigger span::before,
-.navbar__container--trigger span::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: inherit;
-  transition: all 0.2s;
-}
+    &::before,
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: inherit;
+      transition: all 0.2s;
+    }
 
-.navbar__container--trigger span::before {
-  top: -6px;
-}
+    &::before {
+      top: -6px;
+    }
 
-.navbar__container--trigger span::after {
-  bottom: -6px;
-}
+    &::after {
+      bottom: -6px;
+    }
+  }
 
-.navbar__container--trigger:hover span::before {
-  top: -8px;
-}
+  &:hover span::before {
+    top: -8px;
+  }
 
-.navbar__container--trigger:hover span::after {
-  bottom: -8px;
+  &:hover span::after {
+    bottom: -8px;
+  }
 }
 
 /* ========================================================
@@ -149,231 +149,159 @@
     margin-top: -3rem;
     height: 80px;
   }
+
+  &--logoIn img {
+    opacity: 0.7;
+    height:130px;
+  }
 }
 
 .navbar__close {
   position: relative;
 }
-/* Logok */
-
-.social-logo-hidden img {
-  opacity: 0.7;
-  transition: all 0.3s;
-
-  &:hover {
-    cursor: pointer;
-    transform: translateY(-0.3rem);
-  }
-}
-
-.icon-nav {
-  display: inline-block;
-  font-size: 3.35rem;
-  color: rgb(178, 67, 89);
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.805);
-
-  &:hover {
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.805);
-    cursor: pointer;
-  }
-}
-
-.navbar__textbox {
-  border: 2px solid black;
-}
 
 /* ========================================================
-                        checkbox manipulation
-    ========================================================*/
-/* Put this code the html  a lebel eltünteti a chekboxot, majd CSS-ben bárit manipulálhatunk, ilyen a hover is.
-  <label for="navi-toggle"> </label> 
-  <input type="checkbox" class="navigation__checkbox" id="navi-toggle"> */
-
-/* ========================================================
-                        Animation Social
-    ========================================================*/
-.navigation__checkbox {
-  display: none;
-}
-
-.navbar__ion-logo-youtube {
-  opacity: 0;
-  transform: translateX(-11rem);
-}
-
-.navigation__checkbox:checked ~ .navbar__ion-logo-youtube {
-  transform: translateX(0rem);
-  opacity: 1;
-  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.8s,
-    opacity 1s 0.8s, margin-top 0.3s, text-shadow 0.3s, color 0.3s;
-}
-
-.navbar__ion-logo-facebook {
-  opacity: 0;
-  transform: translateX(-11rem);
-}
-
-.navigation__checkbox:checked ~ .navbar__ion-logo-facebook {
-  transform: translateX(0rem);
-  opacity: 1;
-  transition: transform 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s,
-    opacity 1s 0.4s, margin-top 0.3s, text-shadow 0.3s, color 0.3s;
-}
-
-/* ========================================================
-                      Animation Link
+                      Animation Link 
   ========================================================*/
-  .in--1 {
-    animation-name: in--1;
-    animation-duration: 2.4s;
-  
-  }
-  
-  @keyframes in--1 {
-  
-    from,
-    60%,
-    75%,
-    90%,
-    to {
-      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    }
-  
-    0% {
-      transform: translate3d(0, 0, 0);
-    }
-  
-    60% {
-      transform: translate3d(25px, 0, 0);
-    }
-  
-    75% {
-      transform: translate3d(-10px, 0, 0);
-    }
-  
-    90% {
-      transform: translate3d(5px, 0, 0);
-    }
-  
-    to {
-      transform: translate3d(0, 0, 0);
-    }
-  }
-  
-  .in--2 {
-    animation-name: in--2;
-    animation-duration: 2s;
-    animation-delay: 0.4s;
-  
-  }
-  
-  @keyframes in--2 {
-  
-    from,
-    60%,
-    75%,
-    90%,
-    to {
-      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    }
-  
-    0% {
-      transform: translate3d(0, 0, 0);
-    }
-  
-    60% {
-      transform: translate3d(25px, 0, 0);
-    }
-  
-    75% {
-      transform: translate3d(-10px, 0, 0);
-    }
-  
-    90% {
-      transform: translate3d(5px, 0, 0);
-    }
-  
-    to {
-      transform: translate3d(0, 0, 0);
-    }
-  }
-  
-  .in--3 {
-    animation-name: in--3;
-    animation-duration: 1.6s;
-    animation-delay: 0.8s;
-  
-  }
-  
-  @keyframes in--3 {
-  
-    from,
-    60%,
-    75%,
-    90%,
-    to {
-      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    }
-  
-    0% {
-      transform: translate3d(0, 0, 0);
-    }
-  
-    60% {
-      transform: translate3d(25px, 0, 0);
-    }
-  
-    75% {
-      transform: translate3d(-10px, 0, 0);
-    }
-  
-    90% {
-      transform: translate3d(5px, 0, 0);
-    }
-  
-    to {
-      transform: translate3d(0, 0, 0);
-    }
-  }
-  
-  .in--4 {
-    animation-name: in--4;
-    animation-duration: 1.4s;
-    animation-delay: 1.2s;
-  
-  }
-  
-  @keyframes in--4 {
-  
-    from,
-    60%,
-    75%,
-    90%,
-    to {
-      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    }
-  
-    0% {
-      transform: translate3d(0, 0, 0);
-    }
-  
-    60% {
-      transform: translate3d(25px, 0, 0);
-    }
-  
-    75% {
-      transform: translate3d(-10px, 0, 0);
-    }
-  
-    90% {
-      transform: translate3d(5px, 0, 0);
-    }
-  
-    to {
-      transform: translate3d(0, 0, 0);
-    }
+.in--1 {
+  animation-name: in--1;
+  animation-duration: 2.4s;
+}
+
+@keyframes in--1 {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
 
+  60% {
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.in--2 {
+  animation-name: in--2;
+  animation-duration: 2s;
+  animation-delay: 0.4s;
+}
+
+@keyframes in--2 {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  60% {
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.in--3 {
+  animation-name: in--3;
+  animation-duration: 1.6s;
+  animation-delay: 0.8s;
+}
+
+@keyframes in--3 {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  60% {
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.in--4 {
+  animation-name: in--4;
+  animation-duration: 1.4s;
+  animation-delay: 1.2s;
+}
+
+@keyframes in--4 {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  60% {
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
