@@ -27,7 +27,39 @@
   &__p {
     font-size: 1.2rem;
     letter-spacing: 0.15rem;
+    text-decoration: none;
+    position: relative;
+
   }
+
+  &__link {
+    cursor: pointer;
+    color: white;
+    text-transform: none;
+
+    &::before{
+      cursor: pointer;
+      position: absolute;
+      opacity: 0.85;
+      background-color: #fff;
+      content: "";
+      left:0;
+      bottom: 0;
+      width:0%;
+      height: 1px;
+      transition: all 0.3s;
+    }
+
+    &:hover::before {
+      width: 100%;
+    }
+
+  }
+
+  &__textbox a {
+    text-decoration: none;
+  }
+
 
   &__social {
     &--icon {
@@ -37,6 +69,12 @@
       font-size: 3.35rem;
       padding-left: 0.5rem;
       padding-right: 0.5rem;
+
+      &:hover {
+        animation-name: social; 
+        -webkit-animation-duration: 1s;
+      }
+
     }
     &--down {
       font-size: 5rem;
@@ -138,5 +176,37 @@
   &__beer {
     max-width: 220px;
     opacity: 0.7;
+  }
+}
+
+
+/* Animation social */
+@keyframes social {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  60% {
+    transform: translate3d(0, 5px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, -3px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, 3px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
   }
 }

@@ -5,3 +5,20 @@
 //OverRides Bootstrap variables from_variables.scss to overright default values
 //Don't modifyling the source file PLEASE
 
+.modal-title {
+    color:black;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    opacity: 0.85;
+}
+
+.modal-body {
+    color: black;
+    font-size: 1.2rem;
+    letter-spacing: 0.15rem;
+
+    & span {
+        font-weight: 600;
+    }
+}
